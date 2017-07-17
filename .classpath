@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/joda-time.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/joda-time-2.0-sources.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/porter-stemmer-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/remoteExperimentServer.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/stanford-corenlp-2011-09-14-models.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/stanford-corenlp-2011-09-16.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/stanford-parser.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/weka.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/weka-src.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/xom.jar"/>
+	<classpathentry kind="lib" path="D:/2016/Research_2016/ICMLA/CrossCorpus_ICMLA/ライブラリ等/xom-src-1.2.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

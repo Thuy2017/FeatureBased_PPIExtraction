@@ -1,0 +1,9 @@
+NP
+PP
+VP
+PRN
+PRT
+X
+ROOT
+S
+ADVP
