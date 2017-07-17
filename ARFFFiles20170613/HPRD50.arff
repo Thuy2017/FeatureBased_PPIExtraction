@@ -1,0 +1,485 @@
+@relation interact
+
+@attribute interactionword {abolish,acceptor,accompani,accumul,acetyl,act,action,activ,affect,affin,agonist,alter,associ,attach,attack,attenu,augment,bind,block,blockag,carbamoyl,carboxyl,caus,chang,character,cleav,cleavag,co,coactiv,coassoci,coexpress,coimmunoprecipit,coloc,compet,complex,concentr,conjug,conserv,consist,contact,contain,contribut,control,convert,cooper,coprecipit,correl,costimul,counterreceptor,crippl,cross,crosslink,deacetyl,deamin,decarboxyl,decreas,degrad,dehydr,dehydrogen,depend,dephosphoryl,depress,determin,diminish,direct,disrupt,dissoci,distribut,dock,down,downregul,drive,effect,elav,elev,elimin,encod,engag,enhanc,evok,express,facilit,facilitet,follow,form,format,formyl,function,fuse,gener,glycosyl,govern,heterodim,heterodimer,homodim,homodimer,homolog,hydroli,hydrolys,hydrolysi,identifi,immunoprecipit,impact,impair,implic,inact,inactiv,incorpor,increas,induc,induct,influenc,inhibit,inhibitor,initi,interact,involv,isomer,lead,ligand,ligat,limit,link,local,mediat,methyl,mobil,mobilis,modifi,modul,neutral,neutralis,oxid,pair,peroxid,perturb,phosphory,phosphoryl,potenti,prduce,preced,precipit,prevent,produc,promot,rais,react,reactiv,recogn,recruit,reduc,reduct,regul,relat,repress,requir,respond,respons,result,revers,sequest,signal,stabil,stimul,suppress,synerg,synergis,talk,target,termin,tether,tran,transactiv,transamin,transcrib,transform,trigger,ubiquitin,up,upregul,norelword}
+@attribute D1 real
+@attribute D2 real
+@attribute D3 real
+@attribute P_posision1 real
+@attribute P_position2 real
+@attribute K_position real
+@attribute order {avb,vab,abv}
+@attribute NumberOfInteractors real
+@attribute not {true,false}
+@attribute prep {with,of,by,multiple,to,between,via,through,in,for,on,within,during,from,without,at,under,among,after,NA}
+@attribute H1 real
+@attribute H2 real
+@attribute H3 real
+@attribute overlapP {true,false}
+@attribute overlapN {true,false}
+@attribute overlap2 {true,false}
+@attribute overlap3 {true,false}
+@attribute overlapF {true,false}
+@attribute overlapR {true,false}
+@attribute pattern_PVP {true,false}
+@attribute pattern_PVbyP {true,false}
+@attribute pattern_VofPbyP {true,false}
+@attribute pattern_VofPtoP {true,false}
+@attribute pattern_NofPbyP {true,false}
+@attribute pattern_NofPwithP {true,false}
+@attribute pattern_NbetweenPandP {true,false}
+@attribute pattern_combetPandP {true,false}
+@attribute pattern_comofPandP {true,false}
+@attribute pattern_PformcomwithP {true,false}
+@attribute pattern_PPN {true,false}
+@attribute pattern_PdependP {true,false}
+@attribute pattern_between {true,false}
+@attribute pattern_contiguous {true,false}
+@attribute pattern_para {true,false}
+@attribute Dep_KP1 real
+@attribute negative_KP1 real
+@attribute positive_KP1 real
+@attribute Dep_KP2 real
+@attribute negative_KP2 real
+@attribute positive_KP2 real
+@attribute Dep_P1P2 real
+@attribute negative_P1P2 real
+@attribute positive_P1P2 real
+@attribute Dep_P1Root real
+@attribute Dep_P2Root real
+@attribute Dep_KRoot real
+@attribute interaction {True,False}
+
+@data
+conserv,3,5,2,10,12,7,vab,4,false,of,8,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,1,1,2,1,1,1,0,1,3,3,3,False
+conserv,3,9,6,10,16,7,vab,4,false,of,8,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,2,1,1,3,2,1,3,2,1,3,2,3,False
+conserv,5,9,4,12,16,7,vab,4,false,of,8,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,2,1,1,3,2,1,4,3,1,3,2,3,False
+contact,4,5,9,6,15,10,avb,1,false,NA,8,5,8,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,3,1,2,5,3,2,4,3,2,True
+bind,7,3,10,6,16,13,avb,2,false,of,5,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,1,1,4,2,2,3,3,3,False
+bind,7,5,12,6,18,13,avb,2,false,of,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,1,1,4,2,2,3,3,3,False
+bind,3,5,2,16,18,13,vab,2,false,of,7,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,1,1,2,1,1,1,0,1,3,3,3,False
+bind,4,1,5,9,14,13,avb,1,false,NA,8,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,1,1,0,3,2,1,4,3,4,True
+contact,2,4,6,6,12,8,avb,1,false,with,4,8,8,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,4,2,2,4,3,1,4,2,4,True
+encod,6,11,5,18,23,12,vab,1,false,NA,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,3,0,3,5,3,2,6,6,3,False
+encod,6,15,9,18,27,12,vab,1,false,NA,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,4,0,4,6,3,3,6,7,3,False
+encod,11,15,4,23,27,12,vab,1,false,NA,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,4,0,4,4,2,2,6,7,3,False
+interact,7,4,11,16,27,23,avb,3,false,with,8,10,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,2,1,2,0,2,5,2,3,3,4,2,False
+associ,4,7,3,39,42,35,vab,2,false,with,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,3,0,3,4,2,2,9,10,7,False
+fuse,10,7,3,7,10,17,abv,2,false,to,7,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,3,0,2,1,1,4,4,2,False
+fuse,10,12,22,7,29,17,avb,2,false,to,7,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,5,0,5,7,2,5,4,7,2,False
+fuse,7,12,19,10,29,17,avb,2,false,to,7,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,5,0,5,8,3,5,4,7,2,False
+activ,1,1,2,1,3,2,avb,2,false,in,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+upregul,2,7,5,10,15,8,vab,3,false,by,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,2,0,2,1,0,1,3,4,2,False
+promot,1,5,6,1,7,2,avb,1,false,of,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+promot,1,12,13,1,14,2,avb,1,false,of,4,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,2,4,1,False
+promot,5,12,7,7,14,2,vab,1,false,of,6,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,0,3,4,1,3,2,4,1,False
+complex,2,8,6,8,14,6,vab,2,false,with,10,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,3,0,3,4,2,2,5,6,3,False
+bind,2,1,3,2,5,4,avb,1,false,NA,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+bind,2,3,5,2,7,4,avb,1,false,NA,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+bind,2,5,7,2,9,4,avb,1,false,NA,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+bind,1,3,2,5,7,4,vab,1,false,NA,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,2,0,2,1,0,1,2,3,1,False
+bind,1,5,4,5,9,4,vab,1,false,NA,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,2,0,2,1,0,1,2,3,1,False
+bind,3,5,2,7,9,4,vab,1,false,NA,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,0,2,2,0,2,1,0,1,3,3,1,False
+regul,1,11,12,1,13,2,avb,3,false,through,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+regul,16,3,13,7,20,23,abv,1,false,NA,4,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,4,0,3,0,3,4,7,3,True
+depend,1,5,6,14,20,15,avb,4,false,on,6,6,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,2,2,0,2,0,2,4,2,2,4,4,2,True
+induc,1,8,9,3,12,4,avb,4,false,of,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,2,4,1,True
+inhibit,3,10,7,20,27,17,vab,1,false,by,4,13,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,5,1,4,5,2,3,7,10,5,True
+involv,2,5,7,3,10,5,avb,5,false,in,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+phosphoryl,2,7,5,13,18,11,vab,3,false,of,6,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,1,1,1,1,1,0,5,3,2,False
+phosphoryl,2,7,5,14,19,12,vab,3,false,of,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,0,3,3,1,2,4,6,3,False
+phosphoryl,2,6,4,8,12,6,vab,2,false,of,8,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,2,0,2,2,1,1,4,4,2,False
+phosphoryl,2,9,7,8,15,6,vab,2,false,of,8,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,1,0,1,2,1,1,4,3,2,False
+phosphoryl,6,9,3,12,15,6,vab,2,false,of,9,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,1,0,1,2,1,1,4,3,2,False
+block,5,7,2,15,17,10,vab,3,false,NA,7,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,1,0,1,1,0,1,2,1,1,2,2,1,False
+block,5,12,7,15,22,10,vab,3,false,NA,7,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,1,0,1,3,0,3,4,2,2,2,4,1,False
+block,7,12,5,17,22,10,vab,3,false,NA,7,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,1,0,1,3,0,3,4,2,2,2,4,1,False
+associ,2,6,4,8,12,6,vab,1,false,of,7,7,4,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,1,0,1,2,1,1,3,2,1,3,2,2,True
+interact,8,2,10,9,19,17,avb,1,false,with,5,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,4,2,1,0,1,7,4,3,5,4,3,True
+contain,6,8,2,23,25,17,vab,3,false,to,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,2,0,2,2,1,1,6,6,4,False
+complex,13,13,0,8,8,21,abv,3,false,by,4,4,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,7,5,2,7,5,2,0,0,0,6,6,3,False
+complex,13,14,27,8,35,21,avb,3,false,by,4,13,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,7,5,2,4,2,2,9,6,3,6,5,3,False
+complex,13,16,29,8,37,21,avb,3,false,by,4,4,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,7,5,2,6,2,4,11,6,5,6,7,3,False
+complex,13,14,27,8,35,21,avb,3,false,by,4,13,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,7,5,2,4,2,2,9,6,3,6,5,3,False
+complex,13,16,29,8,37,21,avb,3,false,by,4,4,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,7,5,2,6,2,4,11,6,5,6,7,3,False
+inhibit,9,11,2,35,37,26,vab,3,false,by,13,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,0,2,4,0,4,2,0,2,5,7,3,False
+interact,4,8,4,9,13,5,vab,2,false,between,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,1,2,5,3,2,3,3,2,False
+bind,2,9,7,21,28,19,vab,5,false,to,8,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,4,0,4,4,1,3,5,7,3,False
+character,6,11,5,12,17,6,vab,1,false,of,7,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,1,4,3,1,2,4,3,1,4,2,2,False
+character,6,14,8,12,20,6,vab,1,false,of,7,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,1,4,6,1,5,7,3,4,4,5,2,False
+character,11,14,3,17,20,6,vab,1,false,of,5,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,6,1,5,3,0,3,2,5,2,False
+norelword,7,20,13,8,21,1,vab,0,true,NA,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,5,2,3,7,4,3,4,5,3,False
+function,1,11,12,4,16,5,avb,2,false,for,5,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,3,3,2,True
+function,1,13,14,4,18,5,avb,2,false,for,5,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,3,3,2,True
+counterreceptor,6,8,2,16,18,10,vab,2,false,for,8,4,7,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,1,1,2,1,1,2,1,1,3,3,3,False
+identifi,4,6,2,12,14,8,vab,2,false,NA,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,1,0,1,3,0,3,3,1,2,2,4,1,False
+ligand,4,3,7,12,19,16,avb,2,false,NA,6,9,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,1,0,1,4,1,3,2,5,4,False
+ligand,2,3,5,14,19,16,avb,2,false,NA,6,9,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,1,0,1,3,1,2,4,5,4,False
+express,1,9,10,1,11,2,avb,3,false,in,5,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,4,2,2,3,1,2,2,3,3,True
+bind,1,4,5,3,8,4,avb,3,false,of,5,8,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+bind,1,34,35,3,38,4,avb,3,false,of,5,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,6,2,4,6,2,4,2,7,1,False
+express,1,29,30,8,38,9,avb,3,false,in,8,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,9,5,4,8,4,4,3,7,4,False
+counterreceptor,5,2,7,4,11,9,avb,4,false,for,4,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,1,0,1,3,1,2,2,3,2,True
+counterreceptor,5,12,17,4,21,9,avb,4,false,for,4,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,5,2,3,5,2,3,2,5,2,False
+counterreceptor,2,12,10,11,21,9,vab,4,false,for,7,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,5,2,3,6,3,3,3,5,2,False
+interact,6,15,9,8,17,2,vab,3,false,between,7,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,3,0,3,4,2,2,4,5,2,True
+activ,10,1,11,8,19,18,avb,3,false,in,7,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,2,0,2,5,3,2,4,3,1,True
+activ,1,1,2,17,19,18,avb,3,false,in,8,8,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,0,2,0,2,6,4,2,5,3,1,True
+dock,5,9,14,5,19,10,avb,4,false,for,6,11,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,1,3,4,2,2,4,1,3,3,5,5,True
+bind,1,7,8,1,9,2,avb,2,false,to,4,6,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,2,4,1,True
+associ,2,4,2,11,13,9,vab,4,false,of,9,9,4,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,true,false,false,false,false,1,0,1,2,1,1,3,2,1,3,2,2,True
+complex,7,12,19,11,30,18,avb,4,true,to,9,14,10,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,3,1,2,7,3,4,3,6,3,False
+complex,5,12,17,13,30,18,avb,4,true,to,9,14,10,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,1,2,4,1,3,2,6,3,True
+interact,2,4,2,9,11,7,vab,3,false,between,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,true,false,true,1,0,1,1,0,1,1,0,1,3,3,2,True
+result,1,8,9,3,12,4,avb,5,false,in,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+result,1,20,21,3,24,4,avb,5,false,in,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,4,0,4,6,2,4,3,5,1,False
+result,1,22,23,3,26,4,avb,5,false,in,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,4,0,4,6,2,4,3,5,1,False
+rais,8,4,12,12,24,20,avb,5,false,to,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,3,0,3,7,3,4,4,5,2,False
+rais,8,6,14,12,26,20,avb,5,false,to,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,3,0,3,7,3,4,4,5,2,False
+rais,4,6,2,24,26,20,vab,5,false,to,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,3,0,3,3,0,3,1,0,1,5,5,2,False
+regul,3,3,6,5,11,8,avb,3,false,between,7,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,2,1,1,2,1,1,3,3,3,True
+norelword,0,2,2,1,3,1,avb,0,false,NA,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,0,0,0,1,0,1,1,0,1,1,2,1,False
+interact,10,8,2,1,3,11,abv,2,false,to,4,4,7,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,2,0,3,3,0,1,0,1,4,4,2,True
+associ,2,6,4,4,8,2,vab,2,false,of,5,5,5,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,1,0,1,1,0,1,2,1,1,2,2,1,True
+function,1,13,14,7,21,8,avb,2,false,on,5,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,2,3,6,3,3,6,2,4,True
+coprecipit,10,2,12,1,13,11,avb,1,false,with,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+coprecipit,10,11,21,1,22,11,avb,1,false,with,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,2,4,1,False
+coprecipit,2,11,9,13,22,11,vab,1,false,with,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,0,3,4,1,3,2,4,1,False
+immunoprecipit,2,7,9,4,13,6,avb,1,false,from,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+associ,3,2,5,6,11,9,avb,2,false,with,4,6,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,3,3,2,True
+induc,17,15,2,1,3,18,abv,1,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,2,1,1,3,2,1,1,0,1,2,2,2,False
+induc,17,13,4,1,5,18,abv,1,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,2,1,1,1,0,1,1,1,0,2,1,2,True
+induc,15,13,2,3,5,18,abv,1,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,3,2,1,1,0,1,1,1,0,2,1,2,True
+conserv,20,18,2,1,3,21,abv,2,false,in,6,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,4,1,3,5,2,3,1,0,1,2,3,4,False
+conserv,20,15,5,1,6,21,abv,2,false,in,6,6,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,1,3,5,2,3,1,0,1,2,2,4,False
+conserv,20,13,7,1,8,21,abv,2,false,in,6,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,1,3,6,3,3,3,1,2,2,4,4,False
+conserv,20,9,11,1,12,21,abv,2,false,in,6,5,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,1,3,5,2,3,1,0,1,2,2,4,False
+conserv,20,7,13,1,14,21,abv,2,false,in,6,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,1,3,6,3,3,3,1,2,2,4,4,False
+conserv,18,15,3,3,6,21,abv,2,false,in,7,6,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,5,2,3,2,1,1,3,2,4,False
+conserv,18,13,5,3,8,21,abv,2,false,in,7,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,6,3,3,4,2,2,3,4,4,False
+conserv,18,9,9,3,12,21,abv,2,false,in,7,5,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,5,2,3,2,1,1,3,2,4,False
+conserv,18,7,11,3,14,21,abv,2,false,in,7,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,6,3,3,4,2,2,3,4,4,False
+conserv,15,13,2,6,8,21,abv,2,false,in,6,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,5,2,3,6,3,3,1,0,1,2,4,4,False
+conserv,15,9,6,6,12,21,abv,2,false,in,6,5,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,5,2,3,2,1,1,2,2,4,False
+conserv,15,7,8,6,14,21,abv,2,false,in,6,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,6,3,3,4,2,2,2,4,4,False
+conserv,13,9,4,8,12,21,abv,2,false,in,7,5,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,3,3,5,2,3,3,2,1,4,2,4,False
+conserv,13,7,6,8,14,21,abv,2,false,in,7,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,3,3,6,3,3,5,3,2,4,4,4,False
+conserv,9,7,2,12,14,21,abv,2,false,in,5,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,5,2,3,6,3,3,1,0,1,2,4,4,False
+inhibit,2,2,4,5,9,7,avb,2,false,of,6,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,2,0,2,4,1,3,2,4,2,True
+function,3,1,2,4,6,7,abv,1,false,of,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,1,1,0,1,1,0,1,0,1,3,3,2,False
+function,3,4,7,4,11,7,avb,1,false,of,5,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,3,5,2,True
+function,1,4,5,6,11,7,avb,1,false,of,5,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,5,2,3,3,5,2,True
+interact,4,2,2,8,10,12,abv,3,false,with,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,1,1,0,1,1,0,1,0,1,3,3,2,False
+interact,4,3,7,8,15,12,avb,3,false,with,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,3,4,2,True
+interact,2,3,5,10,15,12,avb,3,false,with,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,true,false,false,false,false,1,1,0,2,0,2,4,2,2,3,4,2,True
+interact,9,7,2,7,9,16,abv,4,false,with,9,9,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,1,1,0,1,1,0,1,0,1,3,3,2,False
+interact,9,2,7,7,14,16,abv,4,false,with,9,9,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,1,0,1,0,1,3,3,2,False
+interact,9,3,12,7,19,16,avb,4,false,with,9,10,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,3,3,2,True
+interact,9,16,25,7,32,16,avb,4,false,with,9,10,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,0,5,6,1,5,3,7,2,True
+interact,7,2,5,9,14,16,abv,4,false,with,9,9,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,1,0,2,1,1,3,3,2,False
+interact,7,3,10,9,19,16,avb,4,false,with,9,10,8,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,3,2,1,3,3,2,True
+interact,7,16,23,9,32,16,avb,4,false,with,9,10,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,0,5,7,2,5,3,7,2,True
+interact,2,3,5,14,19,16,avb,4,false,with,9,10,8,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,true,false,false,false,false,1,1,0,1,0,1,3,2,1,3,3,2,True
+interact,2,16,18,14,32,16,avb,4,false,with,9,10,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,0,5,7,2,5,3,7,2,True
+result,4,9,13,19,32,23,avb,4,false,in,10,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,4,0,4,6,1,5,3,7,3,False
+inhibit,2,6,4,3,7,1,vab,6,false,of,6,7,6,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,2,0,2,2,0,2,2,1,1,4,4,2,True
+inhibit,2,8,6,3,9,1,vab,6,false,of,6,7,6,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,true,false,false,false,false,2,0,2,2,0,2,2,1,1,4,4,2,True
+involv,10,7,17,3,20,13,avb,6,false,of,6,4,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,1,4,1,3,5,3,2,4,3,2,False
+inhibit,6,8,2,7,9,1,vab,6,false,of,7,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,2,0,2,2,0,2,1,0,1,4,4,2,False
+involv,6,7,13,7,20,13,avb,6,false,of,7,4,6,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,3,3,1,4,1,3,5,3,2,4,3,2,False
+involv,4,7,11,9,20,13,avb,6,false,of,7,4,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,1,4,1,3,6,4,2,4,3,2,False
+contain,6,2,8,1,9,7,avb,1,false,at,5,6,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,False
+interact,5,1,4,3,7,8,abv,1,false,with,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,1,0,2,1,1,2,2,1,False
+interact,5,2,7,3,10,8,avb,1,false,with,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+interact,1,2,3,7,10,8,avb,1,false,with,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+express,12,8,4,2,6,14,abv,1,false,in,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,1,1,0,1,1,0,3,2,1,False
+express,12,3,9,2,11,14,abv,1,false,in,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,3,0,3,1,2,3,4,1,False
+express,8,3,5,6,11,14,abv,1,false,in,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,3,0,2,0,2,2,4,1,False
+interact,2,10,12,1,13,3,avb,1,false,with,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+direct,8,14,22,4,26,12,avb,4,false,in,5,5,10,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,2,1,6,0,6,9,2,7,3,8,2,False
+interact,8,6,2,7,9,15,abv,2,true,with,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,3,3,0,2,1,1,5,3,1,False
+interact,8,16,24,7,31,15,avb,2,true,with,5,12,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,4,0,4,8,3,5,5,5,1,False
+interact,6,16,22,9,31,15,avb,2,true,with,5,12,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,4,0,4,7,3,4,3,5,1,False
+modul,11,11,0,1,1,12,abv,1,false,between,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,2,2,0,0,0,0,3,3,1,False
+modul,11,8,3,1,4,12,abv,1,false,between,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,2,2,0,2,1,1,3,3,1,False
+modul,11,8,19,1,20,12,avb,1,false,between,4,8,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+modul,11,8,3,1,4,12,abv,1,false,between,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,2,2,0,2,1,1,3,3,1,False
+modul,11,8,19,1,20,12,avb,1,false,between,4,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+modul,8,8,16,4,20,12,avb,1,false,between,7,8,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+interact,11,11,0,1,1,12,abv,3,false,with,6,6,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,2,2,0,0,0,0,4,4,2,False
+interact,11,8,3,1,4,12,abv,3,false,with,6,9,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,2,2,0,2,1,1,4,4,2,False
+interact,11,8,3,1,4,12,abv,3,false,with,6,9,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,2,2,0,2,1,1,4,4,2,False
+bind,1,8,9,10,19,11,avb,3,false,of,8,9,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,4,5,2,True
+bind,1,19,20,10,30,11,avb,3,false,of,8,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,4,5,2,False
+bind,1,21,22,10,32,11,avb,3,false,of,8,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,4,5,2,False
+bind,8,19,11,19,30,11,vab,3,false,of,9,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,3,0,3,5,3,2,5,5,2,False
+bind,8,21,13,19,32,11,vab,3,false,of,9,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,3,0,3,5,3,2,5,5,2,False
+bind,19,21,2,30,32,11,vab,3,false,of,7,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,3,0,3,3,0,3,2,1,1,5,5,2,True
+form,4,2,2,3,5,7,abv,4,false,with,4,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,1,1,0,2,2,0,3,1,2,2,4,1,True
+form,4,13,17,3,20,7,avb,4,false,with,4,12,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,1,1,0,3,1,2,4,2,2,2,4,1,True
+form,2,13,15,5,20,7,avb,4,false,with,4,12,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,2,2,0,3,1,2,6,4,2,4,4,1,True
+encod,12,14,2,17,19,5,vab,1,false,of,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,0,2,2,0,2,1,0,1,5,5,3,False
+result,11,14,3,13,16,2,vab,2,false,of,5,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,1,3,3,1,2,3,2,1,4,3,2,False
+result,11,33,22,13,35,2,vab,2,false,of,5,9,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,1,3,6,1,5,6,2,4,4,6,2,False
+result,14,33,19,16,35,2,vab,2,false,of,4,9,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,6,1,5,5,1,4,3,6,2,False
+result,16,18,2,18,20,2,vab,3,false,of,4,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,3,1,2,5,1,4,3,1,2,3,5,2,False
+interact,5,4,9,18,27,23,avb,3,false,with,4,7,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,3,3,2,True
+interact,3,4,7,20,27,23,avb,3,false,with,4,7,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,1,0,1,4,3,1,5,3,2,True
+talk,5,8,3,15,18,10,vab,1,false,between,8,7,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,5,2,3,6,3,3,4,4,3,True
+talk,5,12,7,15,22,10,vab,1,false,between,8,8,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,5,2,3,6,3,3,4,4,3,True
+talk,8,12,4,18,22,10,vab,1,false,between,7,8,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,5,2,3,2,1,1,4,4,3,False
+direct,5,3,8,4,12,9,avb,3,false,of,5,8,7,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,2,1,1,5,2,3,3,4,4,False
+direct,5,10,15,4,19,9,avb,3,true,of,5,6,7,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,5,3,2,4,2,2,3,3,4,False
+express,5,2,7,12,19,17,avb,3,true,with,8,6,4,false,false,false,false,false,false,false,true,false,false,false,true,false,false,false,false,false,false,false,false,false,4,3,1,1,0,1,5,3,2,4,3,2,False
+form,17,15,2,9,11,26,abv,1,false,NA,7,7,9,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,4,2,2,5,3,2,1,0,1,3,3,3,False
+interact,8,3,5,1,6,9,abv,2,false,with,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,2,2,0,2,0,2,1,3,3,False
+interact,8,4,12,1,13,9,avb,2,false,with,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,1,0,1,3,1,2,1,4,3,True
+interact,8,6,14,1,15,9,avb,2,false,with,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,1,0,1,3,1,2,1,4,3,True
+interact,3,4,7,6,13,9,avb,2,false,with,4,6,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,1,0,1,3,2,1,3,4,3,True
+interact,3,6,9,6,15,9,avb,2,false,with,4,6,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,1,0,1,3,2,1,3,4,3,True
+signal,2,4,2,13,15,11,vab,2,false,NA,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,1,1,0,2,1,1,1,0,1,4,4,5,False
+act,6,4,2,1,3,7,abv,3,false,of,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,3,1,2,4,2,2,1,0,1,2,2,3,False
+act,6,17,23,1,24,7,avb,3,false,of,4,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,9,4,5,7,2,5,2,8,3,True
+act,6,19,25,1,26,7,avb,3,false,of,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,7,3,4,5,1,4,2,6,3,True
+act,6,21,27,1,28,7,avb,3,false,of,4,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,7,3,4,5,1,4,2,6,3,True
+act,4,17,21,3,24,7,avb,3,false,of,4,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,9,4,5,8,3,5,2,8,3,True
+act,4,19,23,3,26,7,avb,3,false,of,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,7,3,4,6,2,4,2,6,3,True
+act,4,21,25,3,28,7,avb,3,false,of,4,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,7,3,4,6,2,4,2,6,3,True
+signal,4,6,2,24,26,20,vab,3,false,NA,10,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,1,1,2,1,1,8,6,6,False
+signal,4,8,4,24,28,20,vab,3,false,NA,10,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,1,1,2,1,1,8,6,6,False
+signal,6,8,2,26,28,20,vab,3,false,NA,4,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,2,1,1,2,1,1,6,6,6,False
+contain,1,18,19,4,23,5,avb,2,false,with,4,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,2,4,1,True
+regul,10,8,2,4,6,14,abv,4,false,of,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,1,1,0,1,1,0,1,0,1,3,3,2,False
+regul,10,5,15,4,19,14,avb,4,false,of,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,3,4,2,True
+regul,10,16,26,4,30,14,avb,4,false,of,5,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,0,4,5,1,4,3,6,2,True
+regul,8,5,13,6,19,14,avb,4,false,of,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,4,2,2,3,4,2,True
+regul,8,16,24,6,30,14,avb,4,false,of,5,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,0,4,6,2,4,3,6,2,True
+act,5,6,11,19,30,24,avb,4,false,to,5,6,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,2,1,3,0,3,6,2,4,4,6,3,False
+lead,6,9,3,9,12,3,vab,1,false,to,4,12,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,3,0,3,2,1,1,4,4,1,False
+norelword,10,17,7,11,18,1,vab,0,false,to,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,5,2,3,6,3,3,3,5,3,False
+norelword,10,20,10,11,21,1,vab,0,false,to,5,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,5,3,3,6,4,3,3,5,3,False
+norelword,17,20,3,18,21,1,vab,0,false,to,5,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,5,3,3,1,1,0,5,5,3,False
+interact,5,2,7,5,12,10,avb,1,false,with,4,10,8,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,2,0,2,4,0,4,2,6,4,True
+interact,5,10,15,5,20,10,avb,1,false,with,4,10,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,1,0,1,3,0,3,2,5,4,True
+interact,2,10,8,12,20,10,vab,1,false,with,10,10,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,1,0,1,3,2,1,6,5,4,False
+lead,4,6,10,3,13,7,avb,3,false,to,5,6,5,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,2,0,2,2,0,2,4,0,4,2,6,4,True
+lead,4,8,12,3,15,7,avb,3,false,to,5,6,5,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,2,0,2,4,0,4,6,0,6,2,8,4,True
+reduct,3,5,2,13,15,10,vab,3,false,in,6,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,1,0,1,3,0,3,3,1,2,6,8,5,False
+phosphoryl,1,2,3,4,7,5,avb,1,false,of,6,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,3,3,2,True
+interact,2,4,2,8,10,6,vab,3,false,between,5,5,4,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,true,false,true,1,0,1,1,0,1,1,0,1,3,3,2,True
+interact,2,8,6,8,14,6,vab,3,false,between,5,7,4,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,1,0,1,5,2,3,6,3,3,3,5,2,False
+phosphoryl,7,1,8,8,16,15,avb,3,false,at,5,7,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,3,2,1,0,1,6,3,3,3,5,4,False
+phosphoryl,7,15,22,8,30,15,avb,3,false,at,5,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,3,2,7,3,4,7,4,3,3,6,4,False
+phosphoryl,7,21,28,8,36,15,avb,3,false,at,5,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,3,2,7,3,4,7,4,3,3,6,4,False
+interact,4,8,4,10,14,6,vab,3,false,between,5,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,5,2,3,7,4,3,3,5,2,False
+phosphoryl,5,1,6,10,16,15,avb,3,false,at,5,7,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,4,2,1,0,1,7,4,3,3,5,4,False
+phosphoryl,5,15,20,10,30,15,avb,3,false,at,5,7,4,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,6,4,2,7,3,4,8,5,3,3,6,4,False
+phosphoryl,5,21,26,10,36,15,avb,3,false,at,5,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,4,2,7,3,4,8,5,3,3,6,4,False
+phosphoryl,1,1,2,14,16,15,avb,3,false,at,7,7,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,5,5,4,True
+phosphoryl,1,15,16,14,30,15,avb,3,false,at,7,7,4,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,1,1,0,7,3,4,8,4,4,5,6,4,False
+phosphoryl,1,21,22,14,36,15,avb,3,false,at,7,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,7,3,4,8,4,4,5,6,4,False
+conserv,2,12,14,16,30,18,avb,3,false,in,7,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,9,5,4,8,4,4,5,6,6,False
+conserv,2,18,20,16,36,18,avb,3,false,in,7,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,9,5,4,8,4,4,5,6,6,False
+conserv,12,18,6,30,36,18,vab,3,false,in,7,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,9,5,4,9,5,4,2,1,1,6,6,6,True
+result,4,24,28,3,31,7,avb,4,false,in,7,12,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,6,1,5,7,2,5,3,8,2,False
+result,4,29,33,3,36,7,avb,4,true,in,7,12,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,1,4,6,2,4,3,7,2,False
+result,4,34,38,3,41,7,avb,4,true,in,7,12,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,9,1,8,10,2,8,3,11,2,False
+express,3,8,5,31,36,28,vab,4,true,of,12,12,4,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,true,false,false,false,false,1,0,1,1,0,1,2,1,1,8,7,7,False
+express,3,13,10,31,41,28,vab,4,true,of,12,12,4,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,1,0,1,5,1,4,6,2,4,8,11,7,False
+express,8,13,5,36,41,28,vab,4,true,of,12,12,4,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,true,false,false,false,false,1,0,1,5,1,4,3,0,3,7,11,7,False
+phosphoryl,1,2,3,5,8,6,avb,3,false,of,5,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,4,4,3,True
+lead,3,8,11,4,15,7,avb,3,false,to,6,6,5,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+mediat,6,3,3,10,13,16,abv,1,false,of,7,8,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,3,3,0,2,1,1,4,4,1,False
+mediat,6,1,7,10,17,16,avb,1,false,of,7,6,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,2,0,2,5,3,2,4,3,1,True
+mediat,6,10,16,10,26,16,avb,1,false,of,7,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,3,0,3,6,3,3,4,4,1,False
+mediat,3,1,4,13,17,16,avb,1,false,of,8,6,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,2,0,2,5,3,2,4,3,1,True
+mediat,3,10,13,13,26,16,avb,1,false,of,8,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,3,0,3,6,3,3,4,4,1,False
+mediat,1,10,9,17,26,16,vab,1,false,of,6,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,3,0,3,3,1,2,3,4,1,True
+function,3,5,8,1,9,4,avb,1,false,for,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+function,3,11,14,1,15,4,avb,1,false,for,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,False
+function,5,11,6,9,15,4,vab,1,false,for,7,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,3,0,3,2,1,1,4,4,1,False
+express,21,13,8,4,12,25,abv,1,false,in,9,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,1,2,2,1,2,1,1,4,3,2,False
+express,21,11,10,4,14,25,abv,1,false,in,9,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,1,3,3,1,4,2,2,4,5,2,False
+express,13,11,2,12,14,25,abv,1,false,in,8,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,2,1,3,3,1,1,0,1,3,5,2,False
+interact,4,8,4,6,10,2,vab,1,false,between,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,1,2,5,3,2,3,3,2,False
+interact,4,10,6,6,12,2,vab,1,false,between,4,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,1,2,5,3,2,3,3,2,False
+interact,8,10,2,10,12,2,vab,1,false,between,4,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,3,1,2,3,1,2,2,1,1,3,3,2,False
+function,1,13,14,3,17,4,avb,2,false,in,5,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,1,2,4,1,3,1,5,2,True
+bind,1,2,3,4,7,5,avb,2,false,to,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,3,4,2,True
+bind,1,5,6,4,10,5,avb,2,false,to,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,true,false,false,false,false,1,1,0,2,0,2,3,1,2,3,4,2,True
+bind,2,5,3,7,10,5,vab,2,false,to,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,2,0,2,2,0,2,2,1,1,4,4,2,False
+associ,1,5,6,1,7,2,avb,2,false,with,4,7,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,true,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+associ,1,9,10,1,11,2,avb,2,false,with,4,6,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,2,4,1,True
+associ,1,11,12,1,13,2,avb,2,false,with,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,0,5,6,1,5,2,6,1,True
+complex,2,2,4,7,11,9,avb,2,false,with,7,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,2,1,1,1,0,1,3,4,3,False
+complex,2,4,6,7,13,9,avb,2,false,with,7,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,4,1,3,3,0,3,3,6,3,False
+complex,2,4,2,11,13,9,vab,2,false,with,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,1,1,4,1,3,3,1,2,4,6,3,False
+promot,1,3,4,3,7,4,avb,2,false,of,5,9,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+promot,1,15,16,3,19,4,avb,2,false,of,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,4,1,3,6,3,3,3,5,1,False
+requir,7,5,12,7,19,14,avb,2,false,of,9,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,4,1,2,0,2,7,4,3,4,5,3,True
+express,1,13,14,3,17,4,avb,2,false,by,5,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,2,3,6,3,3,4,4,3,True
+disrupt,1,3,4,8,12,9,avb,2,false,of,6,7,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,2,0,2,5,3,2,4,3,1,False
+disrupt,1,5,6,8,14,9,avb,2,false,of,6,4,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,1,0,1,4,3,1,4,2,1,True
+bind,2,4,2,12,14,10,vab,2,false,of,7,4,4,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,1,0,1,2,1,1,3,2,1,3,2,2,True
+contain,2,6,8,2,10,4,avb,3,false,with,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,4,2,2,4,2,2,3,3,3,True
+contain,2,11,13,2,15,4,avb,3,true,with,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,3,2,1,3,2,1,3,2,3,False
+contain,2,19,21,2,23,4,avb,3,true,with,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,6,2,4,6,2,4,3,6,3,False
+coimmunoprecipit,2,7,5,10,15,8,vab,3,true,with,6,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,1,0,1,2,1,1,3,2,1,False
+promot,10,3,13,10,23,20,avb,3,true,of,6,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,1,3,0,3,7,3,4,3,6,2,False
+promot,5,3,8,15,23,20,avb,3,true,of,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,1,3,0,3,7,3,4,2,6,2,False
+degrad,2,1,3,6,9,8,avb,4,false,in,6,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,2,1,1,2,0,2,4,1,3,3,5,3,True
+degrad,2,10,12,6,18,8,avb,4,false,in,6,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,4,2,2,4,2,2,3,3,3,True
+degrad,2,17,19,6,25,8,avb,4,false,in,6,12,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,6,2,4,6,2,4,3,6,3,False
+degrad,2,22,24,6,30,8,avb,4,false,in,6,13,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,5,2,3,5,2,3,3,5,3,False
+depend,2,7,9,9,18,11,avb,4,false,in,9,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,0,2,0,2,6,4,2,5,3,1,False
+depend,2,14,16,9,25,11,avb,4,false,in,9,12,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,0,5,1,4,8,4,4,5,6,1,False
+depend,2,19,21,9,30,11,avb,4,false,in,9,13,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,0,4,1,3,7,4,3,5,5,1,False
+interact,2,9,7,18,25,16,vab,4,false,with,4,12,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,6,2,4,7,3,4,3,6,2,False
+stabil,9,3,12,18,30,27,avb,4,false,in,4,13,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,3,3,4,2,2,6,3,3,3,5,5,False
+stabil,2,3,5,25,30,27,avb,4,false,in,12,13,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,2,2,5,3,2,6,5,5,True
+interact,1,1,0,1,1,2,abv,1,false,with,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,1,0,0,0,0,2,2,1,False
+interact,1,2,3,1,4,2,avb,1,false,with,4,5,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+interact,1,4,5,1,6,2,avb,1,false,with,4,5,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+interact,1,2,3,1,4,2,avb,1,false,with,4,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+interact,1,4,5,1,6,2,avb,1,false,with,4,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+interact,2,4,2,4,6,2,vab,1,false,with,5,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,2,0,2,1,0,1,2,3,1,False
+interact,7,9,2,14,16,7,vab,2,false,with,5,5,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,1,1,2,1,1,1,0,1,2,2,2,False
+interact,7,20,27,4,31,11,avb,5,false,with,4,11,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,5,1,4,6,2,4,4,7,2,True
+interact,7,22,29,4,33,11,avb,5,false,with,4,11,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,5,1,4,6,2,4,4,7,2,True
+phosphoryl,2,4,2,31,33,29,vab,5,false,of,11,11,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,1,0,1,1,0,1,1,0,1,7,7,6,False
+requir,4,3,7,6,13,10,avb,2,false,NA,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,1,0,1,3,2,1,4,3,2,True
+phosphoryl,2,8,6,6,12,4,vab,5,false,of,8,9,4,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,1,0,1,3,1,2,4,2,2,3,3,2,False
+signal,15,4,19,6,25,21,avb,5,false,to,8,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,2,4,4,1,3,8,2,6,3,7,5,False
+signal,9,4,13,12,25,21,avb,5,false,to,9,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,2,4,4,1,3,8,2,6,3,7,5,False
+requir,4,2,2,5,7,9,abv,6,false,for,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,1,1,0,1,1,0,1,0,1,2,2,1,False
+requir,4,20,24,5,29,9,avb,6,false,for,4,17,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,2,4,1,False
+requir,2,20,22,7,29,9,avb,6,false,for,4,17,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,5,2,3,2,4,1,False
+modul,4,1,3,9,12,13,abv,3,false,with,8,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,3,3,0,2,2,0,3,2,1,4,3,1,True
+interact,1,15,16,5,21,6,avb,5,false,with,5,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,3,4,2,True
+interact,1,21,22,5,27,6,avb,5,false,with,5,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,3,4,2,True
+interact,1,23,24,5,29,6,avb,5,false,with,5,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,3,5,2,True
+interact,1,38,39,5,44,6,avb,5,false,with,5,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,6,1,5,7,2,5,3,8,2,False
+conjug,2,8,6,21,27,19,vab,5,false,of,9,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,1,1,1,0,1,4,4,5,False
+conjug,2,10,8,21,29,19,vab,5,false,of,9,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,1,1,1,0,1,4,5,5,False
+involv,14,9,23,21,44,35,avb,5,false,in,9,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,1,3,0,3,5,1,4,4,8,4,True
+conjug,8,10,2,27,29,19,vab,5,false,of,5,5,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,2,1,1,2,1,1,1,0,1,4,5,5,False
+involv,8,9,17,27,44,35,avb,5,false,in,5,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,1,3,0,3,6,2,4,4,8,4,True
+involv,6,9,15,29,44,35,avb,5,false,in,5,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,1,3,0,3,7,3,4,5,8,4,True
+modifi,2,2,4,1,5,3,avb,3,false,by,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,2,2,1,True
+modifi,2,12,14,1,15,3,avb,3,false,by,4,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,0,4,5,1,4,2,5,1,False
+modifi,2,12,10,5,15,3,vab,3,false,by,4,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,4,0,4,5,1,4,2,5,1,False
+disrupt,1,9,10,5,15,6,avb,3,false,to,6,5,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,5,0,5,7,2,5,3,6,1,True
+disrupt,1,19,20,5,25,6,avb,3,true,to,6,10,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,6,0,6,8,2,6,3,7,1,False
+interact,7,3,10,15,25,22,avb,3,true,NA,5,10,7,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,2,3,2,1,1,5,2,3,6,7,7,False
+associ,3,7,10,4,14,7,avb,4,false,with,5,8,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+associ,3,16,19,4,23,7,avb,4,false,with,5,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,1,3,4,1,3,2,5,1,True
+complex,3,6,9,14,23,17,avb,4,false,during,8,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,2,3,6,3,3,3,5,2,False
+interact,1,2,3,1,4,2,avb,3,false,with,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,3,4,2,True
+associ,2,2,4,5,9,7,avb,1,false,with,4,5,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,1,0,1,3,2,1,4,3,2,True
+bind,6,8,2,8,10,2,vab,1,false,of,8,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,1,0,1,2,1,1,4,2,1,False
+bind,6,10,4,8,12,2,vab,1,false,of,8,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,1,0,1,2,1,1,4,2,1,False
+bind,6,13,7,8,15,2,vab,1,false,of,8,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,1,1,1,1,1,0,4,2,1,False
+bind,8,10,2,10,12,2,vab,1,false,of,8,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,1,0,1,2,1,1,2,2,1,False
+bind,8,13,5,10,15,2,vab,1,false,of,8,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,1,1,1,1,1,0,2,2,1,False
+bind,10,13,3,12,15,2,vab,1,false,of,8,8,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,1,1,1,1,1,0,2,2,1,False
+norelword,7,11,4,8,12,1,vab,0,false,of,9,9,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,6,2,4,2,0,2,3,5,3,False
+norelword,7,17,10,8,18,1,vab,0,false,of,9,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,4,2,2,4,2,2,3,3,3,True
+norelword,7,24,17,8,25,1,vab,0,false,of,9,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,4,2,2,4,2,2,3,3,3,True
+norelword,11,17,6,12,18,1,vab,0,false,of,9,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,2,4,4,2,2,6,4,2,5,3,3,True
+norelword,11,24,13,12,25,1,vab,0,false,of,9,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,2,4,4,2,2,6,4,2,5,3,3,True
+norelword,17,24,7,18,25,1,vab,0,false,of,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,4,2,2,4,2,2,3,3,3,False
+interact,2,28,30,10,40,12,avb,5,false,with,4,13,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,5,1,4,6,2,4,3,6,2,False
+character,12,15,3,23,26,11,vab,5,false,to,9,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,1,1,1,1,0,5,3,4,False
+determin,10,9,19,23,42,33,avb,5,false,of,9,14,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,1,5,0,5,10,4,6,5,8,2,False
+determin,10,18,28,23,51,33,avb,5,false,of,9,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,1,3,0,3,8,4,4,5,6,2,False
+determin,7,9,16,26,42,33,avb,5,false,of,7,14,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,1,5,0,5,9,3,6,3,8,2,False
+determin,7,18,25,26,51,33,avb,5,false,of,7,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,1,3,0,3,7,3,4,3,6,2,False
+interact,7,2,9,42,51,49,avb,5,false,with,14,4,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,5,4,1,1,0,1,6,4,2,8,6,5,False
+produc,12,26,14,29,43,17,vab,1,true,with,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,0,4,9,1,8,5,1,4,5,10,1,False
+bind,8,39,47,7,54,15,avb,4,false,to,8,10,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,0,5,0,5,9,4,5,5,6,1,False
+character,4,5,1,5,6,1,vab,5,false,of,7,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,true,true,1,0,1,1,1,0,3,3,0,3,1,2,False
+bind,2,11,13,5,18,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,4,0,4,8,3,5,3,6,2,False
+bind,2,16,18,5,23,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,4,0,4,8,3,5,3,6,2,False
+bind,2,18,20,5,25,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,4,0,4,8,3,5,3,6,2,False
+bind,2,30,32,5,37,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,7,0,7,11,3,8,3,9,2,False
+bind,2,30,32,5,37,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,7,0,7,11,3,8,3,9,2,False
+bind,1,11,12,6,18,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,4,0,4,5,0,5,1,6,2,True
+bind,1,16,17,6,23,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,4,0,4,5,0,5,1,6,2,True
+bind,1,18,19,6,25,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,4,0,4,5,0,5,1,6,2,True
+bind,1,30,31,6,37,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,7,0,7,8,0,8,1,9,2,False
+bind,1,30,31,6,37,7,avb,5,false,to,7,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,7,0,7,8,0,8,1,9,2,False
+bind,3,2,5,18,23,21,avb,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,6,6,5,False
+bind,3,4,7,18,25,21,avb,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,0,1,2,1,1,6,6,5,False
+bind,3,16,19,18,37,21,avb,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,0,4,5,1,4,6,9,5,False
+bind,3,16,19,18,37,21,avb,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,0,4,5,1,4,6,9,5,False
+bind,2,4,2,23,25,21,vab,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,1,0,1,1,0,1,1,0,1,6,6,5,False
+bind,12,2,14,23,37,35,avb,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,1,0,1,4,1,3,6,9,8,False
+bind,12,2,14,23,37,35,avb,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,1,0,1,4,1,3,6,9,8,False
+bind,10,2,12,25,37,35,avb,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,1,0,1,5,2,3,6,9,8,False
+bind,10,2,12,25,37,35,avb,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,1,0,1,5,2,3,6,9,8,False
+bind,2,2,0,37,37,35,vab,5,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,1,0,1,0,0,0,9,9,8,False
+promot,14,24,38,3,41,17,avb,9,false,of,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+promot,14,35,49,3,52,17,avb,9,false,of,6,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,4,0,4,6,2,4,3,5,1,True
+increas,2,9,11,41,52,43,avb,9,false,in,6,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,4,2,2,4,2,2,4,5,3,False
+potenti,4,2,2,7,9,11,abv,3,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,1,1,0,1,1,0,1,0,1,2,2,1,False
+potenti,4,8,12,7,19,11,avb,3,false,by,5,7,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,4,1,3,2,4,1,True
+potenti,2,8,10,9,19,11,avb,3,false,by,5,7,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,0,3,5,2,3,2,4,1,True
+norelword,2,8,6,3,9,1,vab,0,false,to,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,3,2,1,3,2,1,3,2,3,False
+homodim,8,0,8,5,13,13,abv,1,false,for,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,2,1,0,0,0,3,2,1,5,4,4,False
+homodim,8,8,16,5,21,13,avb,1,false,for,4,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,2,1,7,3,4,8,4,4,5,5,4,False
+homodim,0,8,8,13,21,13,avb,2,false,for,4,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,0,0,0,7,3,4,7,3,4,4,5,4,False
+respons,20,18,2,3,5,23,abv,1,false,for,6,6,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,6,2,4,5,2,3,2,1,1,4,2,4,False
+determin,8,6,2,7,9,15,abv,2,false,of,7,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,3,2,1,1,1,0,4,3,2,False
+associ,1,2,3,1,4,2,avb,2,false,with,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,True
+result,4,10,6,6,12,2,vab,3,false,for,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,3,1,2,4,1,3,3,1,2,3,4,2,True
+regul,7,4,11,6,17,13,avb,3,false,of,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,2,0,2,4,1,3,3,5,3,False
+regul,1,4,5,12,17,13,avb,3,false,of,4,7,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,4,5,3,True
+associ,2,4,2,4,6,2,vab,2,false,of,5,6,5,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,1,0,1,2,0,2,1,0,1,3,4,2,True
+mediat,4,12,16,4,20,8,avb,2,false,by,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,2,0,2,4,2,2,3,3,1,False
+mediat,2,12,14,6,20,8,avb,2,false,by,6,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,2,0,2,5,3,2,4,3,1,True
+complex,3,3,0,4,4,1,vab,2,false,of,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,1,0,1,0,0,0,3,3,2,True
+express,2,8,6,4,10,2,vab,5,false,of,7,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,2,0,2,3,1,2,2,3,1,False
+result,13,8,21,4,25,17,avb,5,false,in,7,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,3,0,3,6,1,5,2,6,3,False
+result,7,8,15,10,25,17,avb,5,false,in,5,7,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,3,0,3,7,2,5,3,6,3,True
+phosphoryl,4,10,14,4,18,8,avb,2,true,with,4,4,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,3,0,3,5,1,4,2,5,2,False
+form,2,8,10,1,11,3,avb,2,false,through,4,7,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,False
+form,2,18,20,1,21,3,avb,2,false,through,4,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,1,2,4,2,2,3,4,1,True
+form,2,28,30,1,31,3,avb,2,false,through,4,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,5,1,4,6,2,4,3,6,1,False
+immunoprecipit,6,4,10,11,21,17,avb,2,false,with,7,10,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,1,1,0,1,6,4,2,4,4,2,False
+immunoprecipit,6,14,20,11,31,17,avb,2,false,with,7,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,4,1,3,0,3,8,4,4,4,6,2,False
+immunoprecipit,4,14,10,21,31,17,vab,2,false,with,10,7,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,0,3,2,0,2,4,6,2,True
+link,1,16,17,9,26,10,avb,3,false,to,4,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,4,0,4,5,0,5,4,9,5,True
+link,1,19,20,9,29,10,avb,3,false,to,4,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,0,3,4,0,4,4,8,5,True
+link,1,21,22,9,31,10,avb,3,false,to,4,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,0,3,4,0,4,4,8,5,True
+link,1,32,33,9,42,10,avb,3,false,to,4,11,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,3,0,3,4,0,4,4,8,5,True
+link,1,40,41,9,50,10,avb,3,false,to,4,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,7,0,7,8,0,8,4,12,5,True
+link,16,19,3,26,29,10,vab,3,false,to,9,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,0,4,3,0,3,2,1,1,9,8,5,False
+link,16,21,5,26,31,10,vab,3,false,to,9,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,0,4,3,0,3,2,1,1,9,8,5,False
+link,16,32,16,26,42,10,vab,3,false,to,9,11,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,0,4,3,0,3,2,1,1,9,8,5,False
+relat,21,3,24,26,50,47,avb,3,false,to,9,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,0,2,6,2,4,9,12,10,False
+link,19,21,2,29,31,10,vab,3,false,to,9,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,3,0,3,2,1,1,8,8,5,False
+link,19,32,13,29,42,10,vab,3,false,to,9,11,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,3,0,3,2,1,1,8,8,5,False
+relat,18,3,21,29,50,47,avb,3,false,to,9,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,0,2,6,2,4,8,12,10,False
+link,21,32,11,31,42,10,vab,3,false,to,9,11,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,0,3,3,0,3,2,1,1,8,8,5,False
+relat,16,3,19,31,50,47,avb,3,false,to,9,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,0,2,6,2,4,8,12,10,False
+relat,5,3,8,42,50,47,avb,3,false,to,11,9,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,2,2,2,0,2,6,2,4,8,12,10,False
+link,4,12,16,6,22,10,avb,2,false,to,6,11,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,1,1,0,1,4,2,2,3,4,2,False
+link,4,34,38,6,44,10,avb,2,false,to,6,11,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,1,6,0,6,9,2,7,3,9,2,False
+link,12,34,22,22,44,10,vab,2,false,to,11,11,8,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,0,1,6,0,6,5,0,5,4,9,2,False
+interact,3,3,0,6,6,9,abv,1,false,with,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,3,3,0,0,0,0,4,4,1,False
+interact,3,3,6,6,12,9,avb,1,false,with,5,5,5,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,1,0,1,4,3,1,4,2,1,True
+interact,3,3,6,6,12,9,avb,1,false,with,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,3,0,1,0,1,4,3,1,4,2,1,True
+distribut,8,14,22,1,23,9,avb,1,false,in,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,5,2,3,4,1,3,2,5,2,False
+result,7,4,11,6,17,13,avb,2,false,in,6,6,6,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,3,0,3,5,2,3,3,4,1,True
+express,10,2,12,14,26,24,avb,2,false,of,4,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,4,3,1,1,0,1,5,3,2,5,4,3,True
+interact,3,21,24,14,38,17,avb,1,false,with,5,5,5,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,0,4,6,2,4,3,6,2,True
+interact,2,12,14,10,24,12,avb,1,false,with,5,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,4,0,4,5,1,4,3,6,2,False
+interact,5,3,2,4,6,9,abv,1,true,with,5,4,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,2,0,1,1,0,3,2,1,3,2,1,False
+interact,2,6,8,1,9,3,avb,1,false,with,4,6,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,3,1,2,4,2,2,2,4,1,True
+interact,2,11,13,1,14,3,avb,1,false,with,4,6,4,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,1,1,1,2,2,1,2,2,1,True
+interact,2,18,20,1,21,3,avb,1,true,with,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,0,2,0,2,3,1,2,2,3,1,False
+interact,6,11,5,9,14,3,vab,1,false,with,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,1,1,1,1,1,0,4,2,1,False
+interact,6,18,12,9,21,3,vab,1,true,with,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,1,2,2,0,2,5,2,3,4,3,1,False
+interact,11,18,7,14,21,3,vab,1,true,with,6,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,1,1,1,2,0,2,4,1,3,2,3,1,False
+interact,8,2,10,3,13,11,avb,1,true,with,5,9,7,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,3,2,1,1,0,1,4,2,2,2,3,2,False
+norelword,2,17,15,3,18,1,vab,0,false,of,4,8,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,1,1,4,1,3,4,1,3,2,4,2,False
+coexpress,2,5,3,6,9,4,vab,2,true,of,4,6,4,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,2,0,2,1,0,1,1,1,0,4,3,2,False

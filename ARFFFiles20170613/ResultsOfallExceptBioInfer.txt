@@ -1,0 +1,43 @@
+3subCC-FS
+Check shrink coefficients for each round of the corpus: With  kA = 0.0; pA = 0.0; kB = 0.0; pB = 0.0; kC = 0.0; pC = 0.0;
+
+CROSS-CORPUS RESULTS1: 
+P = 0.562618595825427
+R = 0.234017363851618
+F = 0.33054626532887404
+
+CROSS-CORPUS RESULTS2 tinh theo trung binh cong: 
+P = 0.5432843009809418
+R = 0.17754282468145274
+F = 0.24882525487315976
+
+<3subCC>
+Check shrink coefficients for each round of the corpus: With  kA = 0.0; pA = 0.0; kB = 0.0; pB = 0.0; kC = 0.0; pC = 0.0;
+
+CROSS-CORPUS RESULTS1: 
+P = 0.5643979057591623
+R = 0.212707182320442
+F = 0.30897105187732876
+
+CROSS-CORPUS RESULTS2 tinh theo trung binh cong: 
+P = 0.5796657496513286
+R = 0.15891063494799865
+F = 0.22739673311755693
+
+
+----------------------------------------------------------------
+3subCCShrink-FS (bo swap trong InstanceLevelCV.Calculation)
+
+InstanceLevelCV on only ONE CORPUS: On round = -1 of CV: With  kA_max = 0.5; pA_max = 0.5; kB_max = 0.5; pB_max = 0.5; kC_max = 0.5; pC_max = 0.5;
+F_max = 0.6350631872831606
+Check shrink coefficients for each round of the corpus: With  kA = 0.5; pA = 0.5; kB = 0.5; pB = 0.5; kC = 0.5; pC = 0.5;
+
+CROSS-CORPUS RESULTS1: 
+P = 0.5457842248413418
+R = 0.23756906077348067
+F = 0.33104206763816335
+
+CROSS-CORPUS RESULTS2 tinh theo trung binh cong: 
+P = 0.627311735164743
+R = 0.17853677669671256
+F = 0.2413159779423983
