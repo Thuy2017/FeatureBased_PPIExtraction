@@ -1,4 +1,4 @@
-Before running our program, please add all the following library JAR files, which I don't upload here due to the constraint of the file content (up to 100MB/file):
+Before running my program, please add all the following library JAR files, which I don't upload here due to the constraint of the file content (up to 100MB/file):
   joda-time.jar
   joda-time-2.0-sources.jar
   porter-stemmer-1.4.jar
