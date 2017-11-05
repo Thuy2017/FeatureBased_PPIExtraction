@@ -1,3 +1,6 @@
+This code is the code of the following paper:
+Thuy Thi Thanh Phan, Takenao Ohkawa, Akihiro Yamamoto, "Protein-Protein Interaction Extraction from Text by Selecting Linguistic Features", BIBE 2017, Washington DC, USA.
+
 Before running my program, please add all the following library JAR files, which I don't upload here due to the constraint of the file content (up to 100MB/file):
   joda-time.jar
   joda-time-2.0-sources.jar
